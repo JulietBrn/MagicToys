@@ -1,15 +1,18 @@
-@keyframes fadeToRight {
+@keyframes magic-appearance {
   0% {
     opacity: 0;
-    transform: translateX(-60px);
+    transform: scale(0.5) rotate(-10deg);
   }
-
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1) rotate(5deg);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: scale(1) rotate(0deg);
   }
 }
 
-.fade-to-right {
-  animation: fadeToRight 0.5s ease-out;
+.magic {
+  animation: magic-appearance 1s ease;
 }

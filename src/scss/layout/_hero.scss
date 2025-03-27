@@ -2,9 +2,14 @@
   background-image: url(assets/img/hero.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   .title-wrap {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 24px;
   }
+}
+
+.hero-2 {
+  background-image: url(assets/img/hero-2.png);
 }

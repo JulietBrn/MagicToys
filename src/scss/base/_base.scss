@@ -12,15 +12,15 @@ $lg: 992px;
 $xl: 1200px;
 
 @font-face {
-  // font-family: 'Prata';
-  // src: local('Prata');
-  // src: url(assets/font/Prata/Prata-Regular.ttf);
+  font-family: "Knewave";
+  src: local("Knewave");
+  src: url(assets/font/Knewave/Knewave-Regular.ttf);
 }
 
 h1,
-h2,
-h3 {
-  // font-family: 'Prata', serif;
+h2 {
+  font-family: "Knewave", serif;
+  text-transform: uppercase;
 }
 
 @font-face {
