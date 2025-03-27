@@ -7,32 +7,35 @@
   padding: var(--header-padding) 0;
   background: var(--header-bg);
 }
-
 .logo {
-  width: 60px;
+  font-weight: 600;
+  text-align: center;
 }
 
-// .nav {
-//   display: flex;
-//   justify-content: space-between;
-//  align-items: center;
-// }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-// .nav-menu {
-//   --padding-link: 5px;
-//   display: flex;
-//   gap: calc(30px - 2 * var(--padding-link));
-// }
-// .nav-menu__link {
-//   padding: var(--padding-link);
-//   font-style: italic;
-//   text-transform: uppercase;
-//   letter-spacing: 0.04em;
-//   color: var(--white-color);
-// }
-// .nav-menu__link:hover {
-//   text-decoration: underline;
-// }
+.nav-menu {
+  --padding-link: 5px;
+  display: flex;
+  gap: calc(30px - 2 * var(--padding-link));
+  @media (max-width: $sm) {
+    gap: calc(20px - 2 * var(--padding-link));
+  }
+}
+.nav-menu__link {
+  padding: var(--padding-link);
+  text-transform: uppercase;
+  @media (max-width: $sm) {
+    font-size: 14px;
+  }
+}
+.nav-menu__link:hover {
+  color: var(--primary-color);
+}
 // .burger {
 //   cursor: pointer;
 //   transform: translateY(-2px);

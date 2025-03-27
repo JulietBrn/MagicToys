@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(assets/img/hero.png);
+  background-size: cover;
+  background-position: center;
+
+  .title-wrap {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 24px;
+  }
+}

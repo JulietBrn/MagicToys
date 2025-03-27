@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="description" content="" />
+    <title>MagicToys - Your One-Stop Toy Store</title>
+    <meta
+      name="description"
+      content="Discover a wide range of toys, games, and collectibles at MagicToys. Perfect for kids and enthusiasts alike. Shop now for the best deals!"
+    />
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
@@ -12,68 +15,736 @@
   <body>
     <header class="header">
       <div class="container">
-        <!-- <nav class="nav">
-          <a href="index.html" class="logo">
-            <img class="logo-img mw-100" src="assets/svg/logo.svg" alt="Logo" />
-          </a>
+        <nav class="nav">
+          <div class="wrap">
+            <a href="index.html" class="logo link"> Magic<br />Toys </a>
+          </div>
 
           <ul class="nav-menu header__nav-menu">
             <li class="nav-menu__item">
-              <a class="nav-menu__link" href="prices.html">Prices</a>
+              <a class="nav-menu__link" href="index.html#toys">Toys</a>
             </li>
             <li class="nav-menu__item">
               <a class="nav-menu__link" href="index.html#form">Order</a>
             </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="delivery.html">Delivery</a>
+            </li>
           </ul>
-          <div class="burger">
-            <span class="burger-span"></span>
-          </div>
-        </nav> -->
+        </nav>
       </div>
     </header>
     <main>
       <section class="section hero">
         <div class="container">
-          <div class="title-wrap"></div>
-          <h1></h1>
+          <div class="title-wrap">
+            <h1>MagicToys - Your One-Stop Toy Store for Kids and Collectors</h1>
+            <p>
+              Discover a wide range of toys, games, and collectibles at
+              MagicToys.
+              <br />Perfect for kids and enthusiasts alike. Shop now for the
+              best deals!
+            </p>
+          </div>
         </div>
       </section>
+
+      <section class="section about">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Who is MagicToys for?</h2>
+            <p>
+              MagicToys is for everyone! Whether you're a parent looking for the
+              perfect toy for your child, a collector searching for rare items,
+              or someone who simply loves fun and games, we have something
+              special for you.
+            </p>
+          </div>
+          <div class="grid grid-2">
+            <div class="description">
+              <p>
+                If you're looking for a place to buy toys, our toy store offers
+                you a huge selection. We specialize in selling high-quality toys
+                for children of all ages. In our toy store, you can find
+                everything you need for your child's exciting and beneficial
+                pastime.
+              </p>
+              <p>
+                Our toy store offers toys for children that promote the
+                development of motor skills, imagination, and creative thinking.
+                We feature dolls, cars, building blocks, puzzles, plush toys,
+                and many other products that will bring joy and engagement to
+                your child.
+              </p>
+              <ul class="list">
+                <li>
+                  Affordable prices with regular discounts and promotions.
+                </li>
+                <li>
+                  A wide range of toys for children, from educational games to
+                  board games.
+                </li>
+                <li>
+                  Safe and certified children's toys from leading manufacturers.
+                </li>
+                <li>Fast and convenient delivery across the country.</li>
+              </ul>
+            </div>
+            <div class="img">
+              <img class="img-fill" src="assets/img/toys.png" alt="Toys" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="toys">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Our Toys</h2>
+            <p>
+              We offer a wide range of toys for children of all ages. From
+              educational games to board games, we have something for everyone.
+              Check out our bestsellers below.
+            </p>
+          </div>
+          <div class="grid img-3">
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/car-toy.png"
+                  alt="Toy Car"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$9.99</span>
+              </div>
+              <h3 class="product-title">Toy Car</h3>
+              <p class="product-description">
+                A fun and durable toy car for kids of all ages.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/castle-toy.png"
+                  alt="Toy Castle"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$11.99</span>
+              </div>
+              <h3 class="product-title">Toy Castle</h3>
+              <p class="product-description">
+                A magical castle to spark your child's imagination.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/kids-toy.png"
+                  alt="Kids Toy"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$13.99</span>
+              </div>
+              <h3 class="product-title">Kids Toy</h3>
+              <p class="product-description">
+                A colorful and engaging toy for young children.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 text-center">
+            <a href="index.html#form" class="button button-primary mt-24"
+              >Order</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section best-sellers">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Best Sellers</h2>
+            <p>Check out our most popular toys that customers love!</p>
+          </div>
+          <div class="grid img-3">
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/besttoy1.png"
+                  alt="Best Seller Toy 1"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$11.99</span>
+              </div>
+              <h3 class="product-title">Horse Toy</h3>
+              <p class="product-description">
+                A favorite among kids for endless fun and creativity.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/besttoy2.png"
+                  alt="Best Seller Toy 2"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$19.99</span>
+              </div>
+              <h3 class="product-title">Kids Toy</h3>
+              <p class="product-description">
+                A top choice for imaginative play and learning.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/besttoy3.png"
+                  alt="Best Seller Toy 3"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$12.99</span>
+              </div>
+              <h3 class="product-title">Plush Toy</h3>
+              <p class="product-description">
+                Loved by kids and parents alike for its quality and fun.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 text-center">
+            <a href="index.html#form" class="button button-primary mt-24"
+              >Order</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section toddlers-toys">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Toys for Toddlers</h2>
+            <p>
+              Explore our specially curated collection of toys designed for the
+              youngest members of your family. Safe, fun, and educational!
+            </p>
+          </div>
+          <div class="grid img-3">
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/rattle-toy.png"
+                  alt="Rattle Toy"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$5.99</span>
+              </div>
+              <h3 class="product-title">Rattle Toy</h3>
+              <p class="product-description">
+                A colorful and safe rattle to keep your baby entertained.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/soft-blocks.png"
+                  alt="Soft Blocks"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$8.99</span>
+              </div>
+              <h3 class="product-title">Soft Blocks</h3>
+              <p class="product-description">
+                Soft and safe building blocks for toddlers to stack and play.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/plush-animal.png"
+                  alt="Plush Animal"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$7.99</span>
+              </div>
+              <h3 class="product-title">Plush Animal</h3>
+              <p class="product-description">
+                A cuddly plush animal perfect for hugs and comfort.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/stacking-toy.png"
+                  alt="Stacking Toy"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$6.99</span>
+              </div>
+              <h3 class="product-title">Stacking Toy</h3>
+              <p class="product-description">
+                A fun and educational stacking toy for toddlers to develop motor
+                skills.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/music-toy.png"
+                  alt="Musical Toy"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$10.99</span>
+              </div>
+              <h3 class="product-title">Musical Toy</h3>
+              <p class="product-description">
+                A colorful musical toy to introduce toddlers to the joy of
+                music.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/shape-sorter.png"
+                  alt="Shape Sorter"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$9.49</span>
+              </div>
+              <h3 class="product-title">Shape Sorter</h3>
+              <p class="product-description">
+                A classic shape sorter toy to enhance problem-solving skills in
+                toddlers.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 text-center">
+            <p>Looking for more toys for toddlers?</p>
+            <p>
+              Check out our full collection of toys for babies and toddlers.
+            </p>
+            <a href="index.html#form" class="button button-primary mt-24"
+              >Order Toys</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section happy-kids">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Why Kids Love Our Toys</h2>
+            <p>
+              Our toys are designed to bring endless joy and excitement to
+              children. Here's why kids can't get enough of MagicToys!
+            </p>
+          </div>
+          <div class="grid grid-2">
+            <div class="img">
+              <img
+                class="img-fill"
+                src="assets/img/happy-kids.png"
+                alt="Happy Kids Playing with Toys"
+              />
+            </div>
+            <div class="description">
+              <p>
+                From colorful designs to engaging features, our toys are crafted
+                to spark imagination and creativity. Whether it's a plush toy
+                for cuddles or a puzzle for problem-solving, every toy is made
+                with love and care.
+              </p>
+              <ul class="list">
+                <li>Bright and vibrant colors that attract kids' attention.</li>
+                <li>Interactive and fun features for hours of play.</li>
+                <li>Safe and durable materials for worry-free enjoyment.</li>
+                <li>Encourages learning and development through play.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="special-offers">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Special Offers</h2>
+            <p>Don't miss out on our exclusive deals and discounts!</p>
+          </div>
+          <div class="grid img-3">
+            <div class="offer">
+              <img
+                src="assets/img/offer-1.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>
+                  Get 10% off on your first order when you sign up for our
+                  newsletter.
+                </p>
+              </div>
+            </div>
+            <div class="offer">
+              <img
+                src="assets/img/offer-4.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>
+                  Buy 2 toys and get 1 free on select items. Limited time offer!
+                </p>
+              </div>
+            </div>
+            <div class="offer">
+              <img
+                src="assets/img/offer-3.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>Free shipping on orders over $50. Shop now and save more!</p>
+              </div>
+            </div>
+            <div class="offer">
+              <img
+                src="assets/img/offer-2.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>
+                  Exclusive 20% discount for members. Join our loyalty program
+                  today!
+                </p>
+              </div>
+            </div>
+            <div class="offer">
+              <img
+                src="assets/img/offer-5.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>
+                  Flash Sale: Up to 50% off on selected toys. Hurry, while
+                  stocks last!
+                </p>
+              </div>
+            </div>
+            <div class="offer">
+              <img
+                src="assets/img/offer-6.png"
+                alt="Offer"
+                class="offer-img img-fill"
+              />
+              <div class="offer-content">
+                <p>
+                  Sign up and get a $5 coupon for your next purchase. Don't miss
+                  out!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24 text-center">
+            <a href="index.html#form" class="button button-primary mt-24"
+              >Order Toys Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="our-advantages">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Our Advantages</h2>
+            <p>
+              Why choose MagicToys? Here are the reasons our customers love us:
+            </p>
+          </div>
+          <div class="grid img-3">
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-1.svg"
+                alt="High Quality"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>High Quality</h3>
+                <p>
+                  We offer only the best toys made from safe and durable
+                  materials.
+                </p>
+              </div>
+            </div>
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-2.svg"
+                alt="Wide Variety"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>Wide Variety</h3>
+                <p>
+                  From educational toys to collectibles, we have something for
+                  everyone.
+                </p>
+              </div>
+            </div>
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-3.svg"
+                alt="Fast Delivery"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>Fast Delivery</h3>
+                <p>
+                  Enjoy quick and reliable delivery to your doorstep,
+                  hassle-free.
+                </p>
+              </div>
+            </div>
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-4.svg"
+                alt="Affordable Prices"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>Affordable Prices</h3>
+                <p>
+                  Get the best value for your money with our competitive
+                  pricing.
+                </p>
+              </div>
+            </div>
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-5.svg"
+                alt="Customer Support"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>Excellent Support</h3>
+                <p>
+                  Our friendly team is always here to assist you with any
+                  questions.
+                </p>
+              </div>
+            </div>
+            <div class="advantage">
+              <img
+                src="assets/svg/adv-6.svg"
+                alt="Customer Satisfaction"
+                class="advantage-img"
+              />
+              <div class="advantage-content">
+                <h3>Customer Satisfaction</h3>
+                <p>
+                  Join thousands of happy customers who trust MagicToys for
+                  their needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section adult-puzzles" id="puzzles">
+        <div class="container">
+          <div class="grid grid-2">
+            <div class="title-wrap">
+              <h2>Puzzles for Adults</h2>
+              <p>
+                Challenge your mind and unwind with our collection of puzzles
+                designed for adults. Perfect for relaxation and mental
+                stimulation.
+              </p>
+              <p>
+                At MagicToys, we believe that toys are not just for kids. Our
+                collection includes a variety of puzzles and games designed
+                specifically for adults. Whether you're looking for a relaxing
+                pastime, a challenging brain teaser, or a creative project, we
+                have something for you. Explore our range of adult puzzles,
+                including intricate 3D wooden puzzles, large-piece jigsaw
+                puzzles, and engaging brain teasers that are perfect for
+                unwinding after a long day or spending quality time with friends
+                and family.
+              </p>
+            </div>
+            <img
+              src="assets/img/adult-toy.png"
+              alt="adult toy"
+              class="mw-100"
+            />
+          </div>
+          <div class="mt-24">
+            <h3>
+              Check out our best-selling puzzles for adults and order yours
+              today!
+            </h3>
+          </div>
+          <div class="grid img-3 mt-24">
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/puzzle-1.png"
+                  alt="1000-Piece Puzzle"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$14.99</span>
+              </div>
+              <h3 class="product-title">1000-Piece Puzzle</h3>
+              <p class="product-description">
+                A challenging and rewarding puzzle for hours of entertainment.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/puzzle-2.png"
+                  alt="3D Wooden Puzzle"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$19.99</span>
+              </div>
+              <h3 class="product-title">3D Wooden Puzzle</h3>
+              <p class="product-description">
+                A unique 3D puzzle that combines creativity and craftsmanship.
+              </p>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img
+                  src="assets/img/puzzle-3.png"
+                  alt="Brain Teaser Puzzle"
+                  class="product-img img-fill"
+                />
+                <span class="product-price">$9.99</span>
+              </div>
+              <h3 class="product-title">Brain Teaser Puzzle</h3>
+              <p class="product-description">
+                Test your problem-solving skills with this fun brain teaser.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 text-center">
+            <a href="index.html#form" class="button button-primary mt-24"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </section>
+
       <section class="section reviews">
         <div class="container">
           <div class="title-wrap">
-            <h2></h2>
+            <h2>What Our Customers Say</h2>
+            <p>
+              Read reviews from our satisfied customers and discover why they
+              love MagicToys!
+            </p>
+          </div>
+          <div class="reviews grid grid-2">
+            <div class="review">
+              <img src="assets/img/review-1.png" alt="Toy" class="mw-150" />
+              <div class="review-descr">
+                <p class="review-text">
+                  "MagicToys has an amazing collection of toys! My kids
+                  absolutely love the puzzles and plush toys. Highly recommend!"
+                </p>
+                <p class="review-author">- Sarah L.</p>
+              </div>
+            </div>
+            <div class="review">
+              <img src="assets/img/review-2.png" alt="Toy" class="mw-150" />
+              <div class="review-descr">
+                <p class="review-text">
+                  "Great quality toys at affordable prices. The delivery was
+                  fast, and the customer service was excellent!"
+                </p>
+                <p class="review-author">- Michael R.</p>
+              </div>
+            </div>
+            <div class="review">
+              <img src="assets/img/review-3.png" alt="Toy" class="mw-150" />
+              <div class="review-descr">
+                <p class="review-text">
+                  "I bought a 3D wooden puzzle for myself, and it was so much
+                  fun to assemble. Perfect for adults too!"
+                </p>
+                <p class="review-author">- Emily T.</p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="imgs-wrap">
+                <img src="assets/img/review-4.png" alt="Toy" class="mw-150" />
+                <img src="assets/img/review-5.png" alt="Toy" class="mw-150" />
+              </div>
+              <div class="review-descr">
+                <p class="review-text">
+                  "The toys are amazing! My nephew loved the toy car I got for
+                  him. Will definitely shop again!"
+                </p>
+                <p class="review-author">- Anna K.</p>
+              </div>
+            </div>
+            <div class="review">
+              <img src="assets/img/review-6.png" alt="Toy" class="mw-150" />
+              <div class="review-descr">
+                <p class="review-text">
+                  "Excellent variety and quality. The puzzles are my favorite.
+                  Highly recommended!"
+                </p>
+                <p class="review-author">- David P.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- <section class="section" id='form'>
-      <div class="container">
-        <form
-          class="form"
-          action="thanks_form.php"
-          method="post"
-          >
 
-          <input class="form__input" type="text" name="name" placeholder="Name" required>
-          <input class="form__input" type="email" name="email" placeholder="Email" required>
-          <textarea
-            class="form__input"
-            type="text"
-            name="text"
-            placeholder="Message"
-            minlength="2"
-            maxlength="500"
-            required
-          ></textarea>
-
-          <div class="form__checkbox">
-            <input type="checkbox" name="privacy" value="on" required>
-              I accept <a href="privacy-policy.html">privacy policy</a>
+      <section class="section" id="form">
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Contact Us</h2>
+            <p>
+              Have a question or feedback? We'd love to hear from you! Fill out
+              the form below, and we'll get back to you as soon as possible.
+            </p>
           </div>
+          <form class="form" action="thanks_form.php" method="post">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="form__input"
+              type="text"
+              name="text"
+              placeholder="Message"
+              minlength="2"
+              maxlength="500"
+              required
+            ></textarea>
 
-          <button class="button button-primary">Send</button>
-        </form>
-      </div>
-    </section> -->
+            <div class="form__checkbox">
+              <input type="checkbox" name="privacy" value="on" required />
+              I accept <a href="privacy-policy.html">privacy policy</a>
+            </div>
+
+            <button class="button button-primary no-animation">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -85,18 +756,19 @@
         <div class="footer__contacts-wrap">
           <h3>Contacts</h3>
           <div class="footer__contacts">
-            <a class="footer-link" href="mailto:[companyemail]"
-              >[companyemail]</a
+            <a class="footer-link" href="mailto:magictoys@gmail.com"
+              >magictoys@gmail.com</a
             >
-            <a class="footer-link" href="tel:+91"></a>
-            <!-- +91 XXXXX-XXXXX - Индия.
-       +55 XX XXXXX-XXXX - Бразилия. -->
+            <a class="footer-link" href="tel:+914412577458">+91 44125-77458</a>
+
             <a
               class="footer-link"
-              href="http://"
+              href="https://maps.app.goo.gl/dnH6yNrfcEoaAAaM8"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+              >18-8-451/4, Taj Villa, Akbar Nagar, Edi Bazaar, Hyderabad,
+              Telangana 500023, India</a
+            >
           </div>
         </div>
 

@@ -5,20 +5,20 @@
   --gray-200: #d6d6d6;
   --gray-400: #55565a;
   --gray-600: #282829;
-  --gray-800: #222222;
-  --green: #2b8a3e;
-  --bg-color: var(--gray-100);
-  --text-color: var(--gray-800);
+  --gray-800: #010f1a;
+  --blue: hsl(265, 100%, 72%);
+  --bg-color: var(--gray-800);
+  --text-color: var(--white-color);
   --border-color: var(--gray-100);
   --input-border-color: var(--gray-200);
-  --primary-color: var(--green);
+  --primary-color: var(--blue);
   --text-secondary: var(--gray-400);
   --header-bg: var(--bg-color);
   --border-radius: 4px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
   /* buttons */
-  --btn-border-radius: var(--border-radius);
+  --btn-border-radius: var(--border-radius-lg);
   --btn-font-size: 20px;
 }
 
@@ -188,6 +188,42 @@ p {
   margin-top: 24px;
 }
 
+/* 
+  these type the CSS variable as color
+  unlocking the ability for the browser 
+  to animate just that portion
+*/
+@property --＠color-1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(98, 100%, 62%);
+}
+@property --＠color-2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(204, 100%, 59%);
+}
+/* keyframes that change the color variable */
+@keyframes gradient-change {
+  to {
+    --＠color-1: hsl(210 100% 59%);
+    --＠color-2: hsl(310 100% 59%);
+  }
+}
+h2,
+.link,
+h1 {
+  /* apply variable changes over time */
+  animation: gradient-change 2s linear infinite alternate;
+  background: linear-gradient(to right in oklch, var(--＠color-1), var(--＠color-2));
+  /* old browser support */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* modern browser version */
+  background-clip: text;
+  color: transparent;
+}
+
 .gap-20-to-40 {
   --gap: 20px;
 }
@@ -257,8 +293,10 @@ p {
   font-size: var(--btn-font-size);
   border-radius: var(--btn-border-radius);
   font-weight: 600;
-  padding: 24px 32px;
+  padding: 20px 32px;
   text-align: center;
+  margin: 6px 0;
+  animation: scale 2s ease infinite;
 }
 .button:hover {
   opacity: 0.9;
@@ -274,6 +312,25 @@ p {
   }
 }
 
+@keyframes scale {
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.btn-sm {
+  padding: 12px 16px;
+}
+
+.section {
+  overflow: hidden;
+}
+
 .button-primary {
   background-color: var(--primary-color);
 }
@@ -282,13 +339,49 @@ p {
   background-color: var(--text-secondary);
 }
 
+.no-animation {
+  animation: none;
+}
+
 .header {
   padding: var(--header-padding) 0;
   background: var(--header-bg);
 }
 
 .logo {
-  width: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  --padding-link: 5px;
+  display: flex;
+  gap: calc(30px - 2 * var(--padding-link));
+}
+@media (max-width: 576px) {
+  .nav-menu {
+    gap: calc(20px - 2 * var(--padding-link));
+  }
+}
+
+.nav-menu__link {
+  padding: var(--padding-link);
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .nav-menu__link {
+    font-size: 14px;
+  }
+}
+
+.nav-menu__link:hover {
+  color: var(--primary-color);
 }
 
 .form {
@@ -313,6 +406,154 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.hero {
+  background-image: url(assets/img/hero.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero .title-wrap {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 24px;
+}
+
+.list li {
+  list-style: disc;
+  margin-left: 16px;
+}
+
+.list {
+  margin-bottom: 12px;
+}
+
+.img {
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.img-icon {
+  width: 48px;
+  margin-right: 8px;
+  transform: translateY(4px);
+}
+
+.offer {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+.offer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.offer .offer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+.offer .offer-img {
+  transition: transform 0.3s;
+}
+.offer:hover .offer-img {
+  transform: scale(1.1);
+}
+
+.advantage-img {
+  width: 70px;
+  margin-bottom: 6px;
+}
+
+.mw-150 {
+  max-width: 150px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 16px;
+  position: relative;
+  background: var(--bg-color);
+  border-radius: var(--border-radius-md);
+  padding: 10px;
+  margin: 2px;
+}
+@media (max-width: 576px) {
+  .review {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.review .imgs-wrap {
+  display: flex;
+  gap: 8px;
+}
+.review::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  border-radius: calc(var(--border-radius-md) + 2px);
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.product {
+  position: relative;
+}
+.product__img-wrap {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  margin-bottom: 12px;
+  border-radius: var(--border-radius-md);
+}
+.product__img-wrap:hover .product-img {
+  transform: scale(1.1);
+}
+.product .product-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.product .product-img {
+  transition: all 0.3s;
+}
+
+h3 {
+  color: var(--blue);
+}
+
+.map-wrap {
+  position: relative;
+  aspect-ratio: 60/45;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.m-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-terms {

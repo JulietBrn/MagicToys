@@ -1,0 +1,33 @@
+.product {
+  &__img-wrap {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border-radius: var(--border-radius-md);
+    &:hover {
+      .product-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  position: relative;
+
+  .product-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .product-img {
+    transition: all 0.3s;
+  }
+}
+
+h3 {
+  color: var(--blue);
+}
